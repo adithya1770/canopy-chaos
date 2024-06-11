@@ -15,7 +15,7 @@
   <h2>Setup</h2>
   <ul>
     <li>**Git:**</li>
-      <li>`git clone https://github.com/adithya1770/canopy-chaos.git`</li>
+      <li>``git clone https://github.com/adithya1770/canopy-chaos.git``</li>
     <li>**Download:**</li>
       <li>Download ZIP from your GitHub repository.</li>
   </ul>
