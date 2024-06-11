@@ -22,6 +22,6 @@
   <h2>Running the Game</h2>
   <pre>python canopy_chaos.py  # (or your main script name)</pre>
   <p>Enjoy your escape!</p>
-  <p>Music Credits to Jesper Kyd</p>
+  <p>Music Credits to <b>Jesper Kyd</b></p>
 </body>
 </html>
