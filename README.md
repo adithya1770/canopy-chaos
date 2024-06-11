@@ -6,7 +6,7 @@
 </head>
 <body>
   <h1>Canopy Chaos</h1>
-  <p>Python CLI adventure game (rich library optional).</p>
+  <p>Python CLI adventure game.</p>
   <h2>Requirements</h2>
   <ul>
     <li>Python 3.6+ (<a href="https://www.python.org/downloads/">Download</a>)</li>
