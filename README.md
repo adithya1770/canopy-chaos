@@ -21,6 +21,6 @@
   </ul>
   <h2>Running the Game</h2>
   <pre>python canopy_chaos.py  # (or your main script name)</pre>
-  <p>**Enjoy your escape!**</p>
+  <p>Enjoy your escape!</p>
 </body>
 </html>
