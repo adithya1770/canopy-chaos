@@ -82,6 +82,7 @@ if refined_entry_Input == "start":
     time.sleep(timer_Delay)
     console.print(" | Escape\n | Die\n", style="bold green")
     user_Choice = input("Enter your Choice : ")
+    user_Choice.lower()
     refined_user_choice = user_Choice.lower()
     time.sleep(timer_Delay)
     if user_Choice == "escape":
@@ -165,7 +166,57 @@ if refined_entry_Input == "start":
             time.sleep(2)
             console.print("Arhhhhh..Good Morning to ME!", style="green bold")
         console.print("YOU SEE HUGE STRUCTURES NEAR A CRATER...", style="bold cyan")
-        endOfGame()
+        console.print("You walk near to the crater..", style="italic green")
+        time.sleep(timer_Delay)
+        console.print("The ground beneath Alex’s feet feels uneven, the roots of ancient trees sprawling like gnarled fingers. Birds and insects hum in the background, a symphony of the jungle. As he approaches the crater, a sudden rustling in the foliage halts him in his tracks", style="italic green")
+        console.print("A SNAKE!!!", style="bold red")
+        time.sleep(timer_Delay)
+        printable_Img2 = "⣀⡀⠀⣀\n⢠⣴⣾⡿⠿⠿⠿⠷⠦⠿⠿\n⠉⡉⠛⢠⣾⣷⡀⠰⣦\n⠸⠇⣈⣀⣀⣀⣀⠈⠂\n⠲⣶⡄⠘⠛⠛⠛⠛\n⠙⢷⡀⠻⣿⠿⠿\n⠉⢴⣶⣶⡄\n⠉⢁⣤⣤⡀\n⠛⠋⣉\n⠸⣿⣿⣷\n⣀⣠⣤⣶⠶⠶⠟⠛⠛⠛⠋⠁⣿⣿⣿⣧\n⠰⣿⣿⠷⠶⠶⠿⠿⠿⠿⠿⠿⠿⠿⠿⢁⣿⣿⣿⣿⠀⠿⢛⣻⡆\n⣠⣤⣤⣤⣶⣶⣶⣶⣶⡶⠶⠖⠒⢀⣤⣾⣿⣿⣿⡟⢀⣾⣿⡿⠃\n⠘⠿⣿⣿⣿⣷⣶⣶⣶⣶⣶⣶⣶⣿⣿⣿⣿⡿⠿⠋\n⠀⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠉⠁"
+        console.print(printable_Img2, style="red")
+        health_Monster = 100
+        health_User = 100
+        console.print("You Check your Inventory....", style="italic green")
+        time.sleep(timer_Delay)
+        console.print(hit_Table)
+        while health_User > 0 or health_Monster > 0:
+                user_Choice3 = input("Enter Attack : ")
+                if user_Choice3 == "1":
+                    health_Monster = health_Monster - 51
+                    console.print("Monster Health is",health_Monster,style="italic green" )
+                    user_Health = random.choice(health_Variable)
+                    health_User = health_User - user_Health
+                    console.print("User Health is", health_User, style="italic green")
+                    if health_Monster < 0:
+                        console.print("HAHAHAH!!", style="bold green")
+                        time.sleep(timer_Delay)
+                        console.print("You have Defeated SERPENTINE!!..", style="italic green")
+                        continuation()
+                        break
+                    elif health_User < 0:
+                        console.print("NO..No...no..argghh", style="bold red")
+                        time.sleep(timer_Delay)
+                        console.print("GOODBYE", style="italic red")
+                        GameOver()
+                        sys.exit()
+                else:
+                    health_Monster = health_Monster - 26
+                    console.print("Monster Health is",health_Monster,style="italic green" )
+                    user_Health = random.choice(health_Variable)
+                    health_User = health_User - user_Health
+                    console.print("User Health is", health_User, style="italic green")
+                    if health_Monster < 0:
+                        console.print("HAHAHAH!!", style="bold green")
+                        time.sleep(timer_Delay)
+                        console.print("You have Defeated SERPENTINE!!..", style="italic green")
+                        continuation()
+                        break
+                    elif health_User < 0:
+                        console.print("NO..No...no..argghh", style="bold red")
+                        time.sleep(timer_Delay)
+                        console.print("GOODBYE", style="bold red")
+                        GameOver()
+                        sys.exit()
+
 
         
     
